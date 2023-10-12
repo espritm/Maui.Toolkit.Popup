@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Maui.Toolkit.Popup.Controls.MyPopup"
+             CanBeDismissedByTappingOutsideOfPopup="False"
+             HorizontalOptions="Center"
+             VerticalOptions="Center">
+
+        <VerticalStackLayout Spacing="20" BackgroundColor="White" Padding="25,10,25,10" Margin="10, 10, 10, 10" >
+
+            <Label x:Name="TitleLabel"
+                   TextTransform="Uppercase"
+                   HorizontalOptions="Start"
+                   FontSize="16"/>
+
+            <Label x:Name="DescriptionLabel"
+                   HorizontalOptions="Start"
+                   FontSize="12"/>
+
+            <Button x:Name="AcceptButton"
+                    MinimumWidthRequest="100"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"/>
+    </VerticalStackLayout>
+
+</toolkit:Popup>
+
